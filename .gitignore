@@ -1,0 +1,5 @@
+**/.DS_Store
+
+# Hugo
+/public
+.hugo_build.lock

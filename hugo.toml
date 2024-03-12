@@ -1,0 +1,8 @@
+baseURL = 'https://www.fivemoreminix.com/'
+languageCode = 'en-us'
+title = 'fivemoreminix'
+theme = "xmin"
+
+# https://gohugo.io/content-management/image-processing/#processing-options
+[imaging]
+quality = 75
