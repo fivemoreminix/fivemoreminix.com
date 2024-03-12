@@ -1,7 +1,15 @@
 baseURL = 'https://www.fivemoreminix.com/'
 languageCode = 'en-us'
 title = 'fivemoreminix'
-theme = "xmin"
+theme = 'xmin'
+sectionPagesMenu = 'main'
+pluralizeListTitles = false
+
+[menus]
+[[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
 
 # https://gohugo.io/content-management/image-processing/#processing-options
 [imaging]
