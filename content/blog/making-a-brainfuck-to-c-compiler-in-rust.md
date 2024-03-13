@@ -1,6 +1,8 @@
 +++
 title = 'Making a Brainfuck to C Compiler in Rust'
 date = 2018-03-03
+tags = ['brainfuck', 'rust', 'c', 'compiler']
+#description = "Making a Brainfuck to C compiler using Rust."
 +++
 
 Let’s make a tokenizer and code generator to understand the basics behind tiny compilers. After this tutorial, you will have a small Brainfuck compiler that generates very fast, portable C code.

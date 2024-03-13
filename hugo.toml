@@ -5,11 +5,18 @@ theme = 'xmin'
 sectionPagesMenu = 'main'
 pluralizeListTitles = false
 
+[params]
+description = "Luke Wilson writes about programming, software development, the Go language, business, and more."
+
 [menus]
 [[menus.main]]
     name = 'Home'
     pageRef = '/'
     weight = 10
+[[menus.main]]
+    name = 'RSS'
+    url = 'index.xml'
+    weight = 20
 
 # https://gohugo.io/content-management/image-processing/#processing-options
 [imaging]

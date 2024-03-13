@@ -1,0 +1,17 @@
+{{- if .IsHome -}}
+    {{- with .Site.Params.description -}}
+    <meta name="description" content="{{ . }}" />
+    {{ end }}
+{{- else -}}
+    {{- with .Params.tags -}}
+        <meta name="keywords" content="{{ delimit . ", " }}" />
+    {{ end }}
+    {{- with .Description -}}
+        <meta name="description" content="{{ . }}" />
+    {{- else -}}
+        <meta name="description" content="{{ plainify (strings.Replace .Summary "\n" " ") }}" />
+    {{ end }}
+{{ end }}
+{{- with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end }}
